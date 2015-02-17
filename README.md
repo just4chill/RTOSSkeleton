@@ -1,2 +1,53 @@
-# RTOSSkeleton
-RTOSSkeleton
+	-> app
+		-> inc : App header files
+			-> app.h
+		-> src : App source files
+			-> app.c
+
+	-> config
+		-> Linker script and debugger config file
+
+	-> core
+		-> device
+			-> inc : Device header files
+				-> core_cm3.h
+				-> core_cmFunc.h
+				-> core_cmInstr.h
+				-> LPC17xx.h
+				-> system_LPC17xx.h
+			-> src : Device source files
+				-> core_cm3.c
+				-> lpc17xx.S
+				-> system_LPC17xx.c
+
+		-> drivers
+			-> inc : Drivers header files
+				-> drivers.h
+			-> src : Drivers source files
+				-> drivers.c
+
+		-> kernel (FreeRTOS kernel)
+			-> inc : Kernel header files
+				-> croutine.h
+				-> deprecated_definitions.h
+				-> FreeRTOS.h
+				-> list.h
+				-> mpu_wrappers.h
+				-> portable.h
+				-> portmacro.h
+				-> projdefs.h
+				-> queue.h
+				-> semphr.h
+				-> StackMacros.h
+				-> task.h
+				-> timers.h
+			-> src : Kernel source files
+				-> croutine.c
+				-> heap_2.c
+				-> list.c
+				-> port.c
+				-> queue.c
+				-> tasks.c
+				-> timers.c
+			-> FreeRTOSConfig.h
+				-> Configuration header file for FreeRTOS kernel
